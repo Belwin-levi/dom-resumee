@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+   
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 3px;
+      color: #2e2e2e;
+      margin-top: 24px;
+
+    }
+
+    .brown-box {
+      width: 100%;
+      height: 500px;
+      background-color: #565656;
+      position: relative;
+    }
+
+    .white-strip {
+      height: 50px;
+      background-color: #eeeeee;
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      bottom: 100px;
+      top: 390px;
+
+    }
+
+    .yellow-box {
+      width: 60%;
+      height: 120px;
+      background-color: #fabe28;
+      border-radius: 10px;
+      margin: auto;
+      position: absolute;
+      top: -35px;
+      left: 0px;
+      right: 0px;
+      z-index: 4;
+
+      box-shadow: 1px 1px 23px -4px #544f4f;
+
+
+    }
+
+    .circle-image {
+      height: 300px;
+      width: 300px;
+      border-radius: 100%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0px;
+      left: 0px;
+      background-color: #eeeeee;
+      background-image: url('https://images-platform.99static.com/bDaRmHRRVYKxkSmtjlGQYQQPr9w=/168x0:1309x1141/500x500/top/smart/99designs-contests-attachments/101/101092/attachment_101092225');
+      background-size: cover;
+      top: 100px;
+      z-index: 3;
+
+    }
+
+    .circle-border {
+      height: 310px;
+      width: 310px;
+      border-radius: 100%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0px;
+      left: 0px;
+      background-color: #544f4f;
+      top: 87px;
+      border: 9px dotted #fabe28;
+      z-index: 2;
+
+    }
+
+    .about {
+      font-weight: 500;
+      font-size: larger;
+      text-align: center;
+    }
+
+    hr {
+      width: 95%;
+      height: 2px;
+      border-width: 0;
+      color: #d9d9d9;
+      background-color: #d9d9d9;
+    }
+
+
+
+    .icon {
+      height: 60px;
+      width: 60px;
+      background-color: #424242;
+      border-radius: 100%;
+      margin-right: 14px;
+      margin-left: 20px;
+     
+
+    }
+
+    i {
+      color: #fabe28;
+      font-size: 1.5rem;
+      margin-left: 18px;
+      margin-top: 16px;
+    }
+
+    h2 {
+      font-weight: 500;
+      color: #646464;
+    }
+
+    .containers{
+      display: inline-block;
+        width: 100%;
+        height: 1000px;
+    }
+
+    .left {
+      width: 45%;
+      display: block;
+      float: left;
+      padding: 0 30px 0 30px;
+    }
+
+    .right {
+      width: 45%;
+      display: block;
+      float: left;
+      border-left: 3px solid #d9d9d9;
+      height: 1080px;
+      padding: 0 0 0 35px;
+    }
+
+    .para{
+      padding: 0 8px 0 20px;
+    }
+
+    .range-width{
+      width: 300px;
+    }
+
+    h3 {
+      text-align: center;
+
+    }
+
+    .range-width{
+      background-color: red;
+    }
+    #id{
+        margin: 0px;
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+    <script>
+//top
+    let section1= document.createElement("section");
+    section1.setAttribute("id","top");
+    document.body.append(section1);
+    
+    
+    let brownbox=document.createElement("div");
+    brownbox.setAttribute("class","brown-box");
+    let whitestrip=document.createElement('div');
+    whitestrip.setAttribute("class","white-strip")
+    let yellowbox=document.createElement('div');
+    yellowbox.setAttribute("class","yellow-box");
+    yellowbox.innerHTML="<h1>BELWIN LEVI SOLOMON</h1>";
+    whitestrip.appendChild(yellowbox);
+    brownbox.appendChild(whitestrip);
+    section1.appendChild(brownbox);
+    
+    
+    
+    let circleimage=document.createElement("div");
+    circleimage.setAttribute("class","circle-image");
+    let circleborder=document.createElement('div');
+    circleborder.setAttribute("class","circle-border");
+    section1.appendChild(circleimage);
+    section1.appendChild(circleborder);
+
+let paragraph = document.createElement("p");
+let line=document.createElement("hr");
+let br= document.createElement("br");
+paragraph.setAttribute("class","about");
+paragraph.innerText="TIRUNELVELI-627011 | 978888257 | belwin40863@gmail.com";
+section1.appendChild(paragraph);
+section1.appendChild(line);
+section1.appendChild(br);
+
+//left
+
+let section2= document.createElement("section");
+    section2.setAttribute("id","main");
+    document.body.append(section2);
+    
+    let con=document.createElement("div");
+    con.setAttribute("class","containers");
+    section2.appendChild(con);
+
+
+    let left = document.createElement("div");
+   left.setAttribute("class","left");
+
+
+
+   let profile = icontable("fas fa-user","PROFILE");
+
+   let para = document.createElement("div");
+   para.setAttribute("class","para");
+   para.innerHTML = "<p>Wish to work in a situation that demands high degree of excellence and that enables me to utilie and enhance my technical and analytical skills.</p>"
+
+   let skills = icontable("fas fa-flask","SKILLS")
+
+   let h3 = document.createElement("h3");
+   h3.innerText = "Technical";
+
+   let table3 = document.createElement("table");
+   table3.setAttribute("style","margin-left:20px;border-spacing:5px;")
+
+   let one = trtd("JavaScript","padding-right:20%");
+   let two = trtd("CSS");
+   let three = trtd("HTML");
+   let four = trtd("REACT");
+   let five = trtd("Nodejs");
+
+   table3.append(one,two,three,four,five);
+
+   let addskills = document.createElement("h3");
+   addskills.innerText = "Additional Skills";
+
+   let table4 = document.createElement("table");
+   table4.setAttribute("style","margin-left:20px;border-spacing:5px;");
+
+   let six = trtd("Team Work","padding-right:20%");
+   let seven = trtd("Communication skills");
+   let eight = trtd("Logical Thinking");
+ 
+
+   table4.append(six,seven,eight);
+
+   let workex = icontable("fas fa-briefcase","Work Experience");
+
+let mainelement = document.createElement("div");
+mainelement.setAttribute("class","para")
+let element1 = document.createElement("div");
+element1.innerHTML = "<h2>EVENT MANAGER &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2014-2017</h2>";
+let element2 = document.createElement("div");
+element2.innerHTML = "<p>Washington DC</p>";
+let element3 = document.createElement("ul");
+let element4 = document.createElement("li");
+element4.innerHTML = "  <li>Lead and execute all phases of event planning and production spanning committee recruitment , training , vendor relationships and on-site facilitation.</p></li></li>"
+element3.append(element4);
+
+mainelement.append(element1,element2,element3)
+
+// right section
+
+let right = document.createElement("div");
+   right.setAttribute("class","right");
+
+let workex1 = icontable("fas fa-briefcase","Work Experience");
+
+let mainelement1 = document.createElement("div");
+mainelement.setAttribute("class","para")
+let element5 = document.createElement("div");
+element5.innerHTML = "<h2>EVENT MANAGER &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2017-2019</h2>";
+let element6 = document.createElement("div");
+element6.innerHTML = "<p>Los vegas</p>";
+let element7= document.createElement("p");
+element7.innerHTML = "  <li>Arranging presentations and pitch deck.</li>"
+let element8 = document.createElement("p");
+element8.innerHTML = "  <li>Designing a PR plan and establishing important focus points.</li>"
+
+
+mainelement1.append(element5,element6,element7,element8)
+
+let workex2 = icontable("fas fa-briefcase","EDUCATION");
+
+let mainelement2 = document.createElement("div");
+mainelement.setAttribute("class","para")
+let element9 = document.createElement("div");
+element9.innerHTML = "<h2>Engineering Immersion Program &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2014</h2>";
+let element10 = document.createElement("div");
+element10.innerHTML = "<p>Chicago</p>";
+let element11= document.createElement("p");
+element11.innerHTML = "  <li> Project-focused intense program with emphasis on Mongo,Express,React and JavaScript(MERN) technical stack</li>"
+let element12 = document.createElement("p");
+element12.innerHTML = "  <li>Developed a full -stack web application , renewU using react that allows user to explore various aspects of medication . User's progress is stored on a backend created using Node and MongoDB</li>"
+let element13 = document.createElement("p");
+element13.innerHTML = "  <li>Deveoped a concierge app,Pley, for individuals looking for curved suggestions when visiting a new place. React was used to develop the front end which includes real-time chat,drag and drop and variety of advanced features.</li>"
+
+mainelement2.append(element9,element10,element11,element12,element13)
+
+
+   function trtd(text,value = "") {
+     var tr = document.createElement("tr");
+     var td1 = document.createElement("td");
+     var td2 = document.createElement("td");
+     td1.setAttribute("style",value);
+     td1.innerHTML = text;
+     var input = document.createElement("input");
+     input.setAttribute("type","range");
+     input.setAttribute("class","range-width");
+     input.setAttribute("min","0");
+     input.setAttribute("max","100");
+     td2.append(input);
+     tr.append(td1,td2);
+     return tr;
+
+   }
+
+   function icontable(name,text) {
+     var table = document.createElement("table");
+     var tr = document.createElement("tr");
+     var td1 = document.createElement("td");
+     var td2 = document.createElement("td");
+     var div = document.createElement("div");
+     var i = document.createElement("i");
+     div.setAttribute("class","icon");
+     i.setAttribute("class",name);
+     var h2 = document.createElement("h2");
+     h2.setAttribute("class","left-headings");
+     h2.innerText = text;
+     div.append(i);
+     td1.append(div);
+     td2.append(h2);
+     tr.append(td1,td2);
+     table.append(tr);
+     return table;
+   }
+  con.append(left,right);
+  left.append(profile,para,br,skills,h3,table3,br,addskills,table4,br,workex,mainelement,br);
+   right.append(br,workex1,mainelement1,br,workex2,mainelement2)
+
+</script>
+    </body>
+    </html>
